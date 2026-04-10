@@ -80,7 +80,7 @@ effect(() => {
   if (pageStore.value) {
     const items = pageStore.value.feed_items
       .filter((i) => !i.vector && !scheduledStore.peek().includes(i.id))
-      .map((i) => ({ id: i.id, text: i.description }));
+      .map((i) => ({ id: i.id, text: `${i.title}. ${i.description}` }));
     scheduledStore.value = [
       ...scheduledStore.peek(),
       ...items.map((i) => i.id),
