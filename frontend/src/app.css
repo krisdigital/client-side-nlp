@@ -1,0 +1,10 @@
+.cluster {
+  border: 1px solid #000;
+  margin-block: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+article {
+  margin-block: 1rem;
+}
